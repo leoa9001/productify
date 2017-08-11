@@ -7,7 +7,10 @@
 
 	"icons": { "48": "swag.png"},
 
-	"content_scripts": [ { "matches": ["*://www.youtube.com/*"], "js": ["productify.js"] }
-	]
+	"content_scripts": [ { "matches": ["*://www.youtube.com/*"], "js": ["onvisit.js"] }],
+
+	"background" : {
+		"scripts": ["productify.js"]
+	}
 
 }
